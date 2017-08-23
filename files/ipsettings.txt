@@ -1,0 +1,11 @@
+IP address: 172.19.2.214
+ubnet mask: 255.255.255.128
+Default Gat: 172.19.2.129
+DNS 1: 172.19.2.129
+DNS 2: 172.16.0.1
+DNS 3: 4.2.2.2
+
+MAC:68-F7-28-53-BD-84d
+
+
+https://akgbit@bitbucket.org/anirdas/accounteasy.git
