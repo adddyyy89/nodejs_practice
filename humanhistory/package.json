@@ -1,0 +1,26 @@
+{
+  "name": "humanhistory",
+  "version": "1.0.0",
+  "description": "Human History by Years",
+  "main": "index.js",
+  "config": {
+    "port": "8080"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Anandkumar Gautam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "http": "0.0.0",
+    "mongoose": "^4.11.9",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

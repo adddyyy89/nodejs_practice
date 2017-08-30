@@ -1,0 +1,34 @@
+{
+	time: {
+		year: 70000,
+		label: "BC"
+	},
+	humans: [{
+		species: "Homo-Sapiens",
+		conservation-status: "Least Concerned",
+		genus: "Homo",
+		family: "Hominidae",
+		work: "Hunter-Gatherer"	,
+		places: [{
+			name: "",
+			area: "East-Africa"
+		},{
+			name: "",
+			area: ""
+		}]
+	},{
+		species: "Neanderthal",
+		conservation_status: "Least Concerned",
+		genus: "Homo",
+		family: "Hominidae",
+		work: "Hunter-Gatherer"	,
+		places: [{
+			name: "",
+			area: "Euroasia"
+		},{
+			name: "",
+			area: ""
+		}]
+	}],
+	creationdate: Date.now
+}

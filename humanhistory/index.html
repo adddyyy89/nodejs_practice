@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html ng-app="historyApp">
+<head>
+	<title>Test Application</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="./scripts/humanhistory.js"></script>
+</head>
+<body ng-controller="historyRESTApp">
+	<center>
+		<div>
+			<h3>New Record to Mongo</h3>
+			<table>
+				<tbody>
+					<!-- YEAR -->
+					<tr>
+						<td>Year: </td>
+						<td><input type="input" ng-model="newrecord_year"></td>
+					</tr>
+					<tr>
+						<td>Type: </td>
+						<td>
+							<select ng-model="newrecord_year_type">
+								<option value="bc" selected="selected">BC</option>
+								<option value="ad">AD</option>
+							</select>
+						</td>
+					</tr>
+					<!-- -->
+					<tr>
+						<td>Species: </td>
+						<td>
+							<select ng-model="newrecord_species">
+								<option value="sapiens" selected="selected">Homo-Sapiens</option>
+								<option value="neanderthal">Neanderthal</option>
+
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Conservation Status: </td>
+						<td>
+							<select ng-model="newrecord_conservation_status">
+								<option value="extinct" selected="true">Extinct</option>
+								<option value="threatened">Threatened</option>
+								<option value="least_concern">Least Concern</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Genus: </td>
+						<td>
+							<select ng-model="newrecord_genus">
+								<option value="homo" selected="selected">Homo</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Family: </td>
+						<td>
+							<select ng-model="newrecord_family">
+								<option value="hominidae" selected="selected">Hominidae</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Work: </td>
+						<td>
+							<select ng-model="newrecord_work">
+								<option value="hunter_gatherer" selected="selected">Hunter-Gatherer</option>
+								<option value="agriculture">Agriculture</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Places: </td>
+						<td>
+							<select ng-model="newrecord_places">
+								<option value="east_africa" selected="selected">East Africa</option>
+								<option value="north_africa">North Africa</option>
+								<option value="euroasia">Euroasia</option>
+								<option value="indonesia">Indonesia</option>
+								<option value="australia">Australia</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<button ng-click="addData();">New Record</button>
+		</div>
+		<br>
+		<div>
+			<h3>Search for Records</h3>
+			<table>
+				<tbody>
+					<tr>
+						<td>Year: </td>
+						<td><input type="input" ng-model="search_year"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<button ng-click="search_all_records();">Search All</button>
+			<!-- Show Result -->
+			<p ng-bind-html="results_mango">{{results_mango}}
+			</p>
+		</div>
+	</center>
+</body>
+</html>
